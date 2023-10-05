@@ -71,7 +71,7 @@
 }
 
 .form-play-listA{
-    background: url('/public/images/img-playlist.png ') no-repeat;
+    background: url('https://i.postimg.cc/3N4Wmphq/img-playlist.png') no-repeat;
     background-size: cover;
     padding: 20px ;
     height: 300px;
@@ -81,7 +81,7 @@
 }
 
 .form-play-listB{
-    background: url('/public/images/img-playlist.png ') no-repeat;
+    background: url('https://i.postimg.cc/3N4Wmphq/img-playlist.png') no-repeat;
     background-size: cover;
     padding: 20px ;
     height: 300px;
