@@ -1,0 +1,41 @@
+.container__register{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.img__register{
+    height: 90%;
+}
+
+.container__form-register{
+    width: 40vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+
+
+.form__register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.containers__inputs-register{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link__login{
+    color: white;
+}
+
+.link__login-click{
+    color: yellow;
+}

@@ -1,0 +1,168 @@
+.header__navbar{
+    background: linear-gradient(98deg, rgba(61, 46, 149, 0.35) 0%, #3D2E95 100%);
+    min-height: 5.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3rem;
+    overflow: hidden;
+}
+
+
+
+.title-principal{
+    font-weight: 300;
+}
+
+
+.container-new-playlist{
+    overflow: hidden;
+}
+
+
+.false{
+    top: -50vw;
+    right: 0;
+}
+
+.true{
+    top: 120px;
+    right: 100px;
+}
+
+.header__container-btns-header{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-header{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: #382B8B;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    gap: 2px;
+    transition: all .3s ease;
+}
+
+.btn-header:hover{
+    background-color: #856BE0;
+}
+
+.container-form{
+    position: absolute;
+    width: 500px;
+    background-color: #856BE0;
+    padding: 20px 0px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+}
+
+.form-new-playlist{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.form-play-listA{
+    background: url('/public/images/img-playlist.png ') no-repeat;
+    background-size: cover;
+    padding: 20px ;
+    height: 300px;
+    width: 400px;
+    animation: rotate .3s linear ;
+    transition: 1s;
+}
+
+.form-play-listB{
+    background: url('/public/images/img-playlist.png ') no-repeat;
+    background-size: cover;
+    padding: 20px ;
+    height: 300px;
+    width: 400px;
+    animation: rotate .3s linear ;
+    transition: 1s;
+}
+
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
+@keyframes rotate {
+    from{
+        transform: perspective(300px) rotateY(180deg);
+    }
+    to{
+        transform: perspective(300px) rotateY(360deg);
+    }
+}
+
+.creating-playl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-title, .to-playlist{
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    width: 338px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+}
+
+.span-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.side, .create{
+    background-color: #856BE0;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.3rem;
+    transition: all .2s ease-in-out;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.btns-form:hover{
+    background-color: #3D2E95;
+}
+
+
+.container__new-tracks-list{
+    width: 90%;
+}
+
+.message-playlist{
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    width: 338px;
+    height: 200px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+}
+
+

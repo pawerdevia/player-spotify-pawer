@@ -1,0 +1,26 @@
+.track-playlist{
+    width: 100%;
+    display: flex;
+}
+
+.header-track{
+    width: 20%;
+}
+
+
+.img-track{
+    width: 80px;
+    border-radius: 15px;
+}
+
+.description-track{
+    width: 70%;
+}
+
+.footer-track{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}

@@ -1,0 +1,60 @@
+.track-result{
+    width: 100%;
+    display: flex;
+}
+
+.header-result{
+    width: 20%;
+}
+
+.img-result{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.description-result{
+    width: 70%;
+    color: white;
+    padding: 0px 10px;
+}
+
+.title-track-result{
+    color: white;
+    text-decoration: none;
+}
+
+.title-track{
+    font-weight: 300;
+}
+
+.artist-track-name{
+    list-style: none;
+}
+
+.artist{
+    font-size: 0.8rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.icons-track-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_result{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.spotify{
+    color: #1ED760;
+}
+
+.plus{
+    background: transparent;
+    border: none;
+    color: white;
+}
