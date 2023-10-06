@@ -8,28 +8,30 @@ import '../assets/styles/TrackPage.css'
 
 const TrackPage = () => {
 
-    
+
     const { id } = useParams()
-    
+
     const [track, getTrack] = useFetch()
-    
+
     useEffect(() => {
         getTrack(`/api/tracks/${id}`)
     }, [id])
-    
+
     console.log(track)
     const navigate = useNavigate()
-    
+
     const handleBack = () => {
         navigate(-1)
     }
-    
+
 
     return (
         <div className='container-result-infotrack'>
-            <div onClick={handleBack} className='button-back'> ← Back </div>
-            <TrackInfo track={track}/>
-            <TracksRelated artist={ track?.artists[0].name }/>
+            <div className='description-trackc'>
+                <div onClick={handleBack} className='button-back'> ← Back </div>
+                <TrackInfo track={track} />
+                <TracksRelated artist={track?.artists[0].name} />
+            </div>
         </div>
     )
 }

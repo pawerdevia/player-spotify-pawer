@@ -1,3 +1,59 @@
-.container-info-track{
-    
+.container-info-track {
+    display: flex;
+}
+
+.header-info-track {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-info-track {
+    border-radius: 50%;
+    width: 90%;
+    padding: calc(10px + 5px);
+    border: 30px solid #0000;
+    --_m: radial-gradient(50% 50%, #000 calc(100% - 30px, #0000 calc(100% - 10px)));
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    --_g: #0000 calc(99% - 5px), #8A2BE2 calc(100% - 10PX) 99%, #0000;
+    --_s: 50PX;
+    --_r: 100% 100% at;
+    background:
+        radial-gradient(var(--_r) 0 0, var(--_g)) calc(100% + var(--_s)) calc(100% + var(--_s)),
+        radial-gradient(var(--_r) 100% 0, var(--_g)) calc(0% - var(--_s)) calc(100% + var(--_s)),
+        radial-gradient(var(--_r) 0 100%, var(--_g)) calc(100% + var(--_s)) calc(0% - var(--_s)),
+        radial-gradient(var(--_r) 100% 100%, var(--_g)) calc(0% - var(--_s)) calc(0% - var(--_s));
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.img-info-track:hover {
+    --_s: 0px
+}
+
+
+.description-info-track {
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-info-description {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.artist-info-track {
+    list-style: none;
+}
+
+.type-info{
+    font-weight: 600;
+    color:#8A2BE2;
 }

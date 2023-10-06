@@ -13,23 +13,24 @@ const TrackInfo = ({ track }) => {
     }
 
 
+
     return (
         <>
             <article className='container-info-track'>
-                <header>
-                    <img onClick={handlePlayer} src={track?.album.images[0].url} alt="album" />
+                <header className='header-info-track'>
+                    <img onClick={handlePlayer} src={track?.album.images[0].url} alt="album" className='img-info-track' />
                 </header>
-                <section>
-                    <h3>{track?.name}</h3>
-                    <ul>
+                <section className='description-info-track'>
+                    <h3 className='title-info-description'>{track?.name}</h3>
+                    <ul className='artist-info-track'>
                         {
                             track?.artists.map(artist => (
                                 <li key={artist.id}>{artist.name}</li>
                             ))
                         }
                     </ul>
-                    <p><span>album: </span>{track?.album.name}</p>
-                    <p><span>Release date: </span>{track?.album.release_date}</p>
+                    <p><span className='type-info'  >Album: </span>{track?.album.name}</p>
+                    <p><span className='type-info' >Release date: </span>{track?.album.release_date}</p>
                 </section>
             </article>
 

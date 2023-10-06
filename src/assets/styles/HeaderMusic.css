@@ -150,6 +150,8 @@
 
 .container__new-tracks-list{
     width: 90%;
+    max-height: 400px;
+    overflow: auto;
 }
 
 .message-playlist{

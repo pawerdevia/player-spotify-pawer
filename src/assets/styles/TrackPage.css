@@ -1,12 +1,32 @@
 .container-result-infotrack{
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    padding: 50px 0px;
+}
+.description-trackc{
+    width: 30%;
+    background: linear-gradient(98deg, rgba(61, 46, 149, 0.35) 0%, #3D2E95 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px ;
+    
 }
 
 .button-back{
     color: white;
     cursor: pointer;
+    background-color: blueviolet;
+    padding: 10px 30px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
 }
